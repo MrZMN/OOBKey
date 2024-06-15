@@ -1,0 +1,38 @@
+The user data is provided in JSON formats.
+
+1. Rotate and Pair
+Each json file corresponds to the data of one participant after pre-processing of the raw sensor readings.
+
+ANGLE:
+A 2D list of shape 3 * 3 in the below format.
+
+          run 1, run 2, run 3  
+device  |  []
+phone   |  []
+diff    |  [] 
+(diff = device - phone)
+
+Each element in ANGLE is a 1D list of angles in the shape of 1 * 8. All angles are integers.
+
+COMPLETION_TIME:
+A 1D list corresponds to the time to complete rotations with the shape of 1 * 24. The unit of time is sample.
+
+ID:
+This is an integer indicating the participant ID.
+
+2. Tap and Pair
+Each json file corresponds to the data of one participant after pre-processing of the raw sensor readings.
+
+TIME_INTERVAL:
+A 2D list of shape 3 * 10.
+
+          run 1, run 2, ..., run 10   
+device  |  []
+phone   |  []
+diff    |  [] 
+(diff = device - phone)
+
+Each element is a 1D list of time intervals in the shape of 1 * 15. All time intervals are integers. 
+
+ID:
+This is an integer indicating the participant ID.
